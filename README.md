@@ -20,3 +20,18 @@
 3. Vérifier l'affichage mobile sur de vrais appareils.
 4. Publier d'abord sur GitHub Pages pour recette.
 5. Connecter ensuite `emendar-iso17025.fr` et vérifier les DNS sans modifier les enregistrements de messagerie.
+
+## V6 — formulaire
+- formulaire Contact connecté à Web3Forms ;
+- anti-bot honeypot ajouté ;
+- redirection après envoi vers `merci.html` ;
+- page de confirmation aux couleurs EMENDAR ;
+- mention de confidentialité sous le formulaire ;
+- page confidentialité mise à jour pour signaler l'utilisation de Web3Forms.
+
+### Test à réaliser après dépôt GitHub
+Envoyer une demande test depuis la page Contact publique et vérifier :
+1. redirection vers `merci.html` ;
+2. réception de l'email à l'adresse EMENDAR ;
+3. présence de la soumission dans le tableau de bord Web3Forms ;
+4. qualité de présentation du message reçu.

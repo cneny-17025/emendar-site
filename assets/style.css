@@ -64,3 +64,20 @@
 .card.blue .btn-card{background:var(--blue)}
 .card.red .btn-card{background:var(--red)}
 .card.yellow .btn-card{background:#f2a500}
+
+/* V6 — formulaire Web3Forms */
+.contact-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form .field{display:flex;flex-direction:column;gap:7px}
+.contact-form .field.full{grid-column:1/-1}
+.contact-form label{font-weight:800;color:var(--navy);font-size:14px}
+.contact-form input,.contact-form select,.contact-form textarea{
+ width:100%;box-sizing:border-box;border:1px solid #ccd5df;border-radius:9px;
+ padding:12px 13px;background:#fff;color:var(--navy);font:inherit
+}
+.contact-form textarea{resize:vertical;min-height:150px}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{
+ outline:3px solid rgba(40,105,232,.16);border-color:var(--blue)
+}
+.contact-form .form-note{max-width:680px;line-height:1.55}
+.contact-form .form-note a{text-decoration:underline}
+@media(max-width:680px){.contact-form .form-grid{grid-template-columns:1fr}.contact-form .field.full{grid-column:auto}}

@@ -12,13 +12,32 @@
     </div></header><main><section class="page-hero"><div class="container"><div class="page-hero-inner"><div class="kicker">Contact</div><h1>Parlons de votre <span>laboratoire.</span></h1><div class="rule"><i class="g"></i><i class="b"></i><i class="r"></i><i class="y"></i></div><p class="lead">Externalisation, transition, accompagnement ou besoin particulier : un premier échange permet de comprendre votre situation et de déterminer si mon expérience correspond à votre besoin.</p></div></div></section>
 <section class="section"><div class="container contact-grid"><div><div class="eyebrow">Cathie NENY</div><h2 style="font-size:38px;color:var(--navy)">Responsable Qualité & Métrologie externalisée</h2><div class="contact-details"><p><a href="mailto:c.neny@emendar-iso17025.fr">c.neny@emendar-iso17025.fr</a></p><p>06 60 12 89 37</p><p>Blanquefort — Gironde</p></div><p>Accompagnement principalement à distance. Déplacements et interventions sur site selon les besoins de la mission.</p></div>
 <div class="contact-card"><h3 style="font-size:24px;color:var(--navy);margin-top:0">Votre besoin</h3>
-<form action="mailto:c.neny@emendar-iso17025.fr" method="post" enctype="text/plain">
-<label for="nom">Nom / Prénom</label><input id="nom" name="Nom" required>
-<label for="labo">Laboratoire / Société</label><input id="labo" name="Laboratoire">
-<label for="email">Email</label><input id="email" name="Email" type="email" required>
-<label for="besoin">Type de besoin</label><select id="besoin" name="Besoin"><option>Fonction externalisée</option><option>Management de transition</option><option>Appui au Responsable Qualité</option><option>Expertise ponctuelle</option><option>Autre</option></select>
-<label for="message">Message</label><textarea id="message" name="Message" required></textarea>
-<button class="btn primary" type="submit" style="border:0;margin-top:16px">Ouvrir mon logiciel de messagerie →</button><p class="form-note">Cette version de démonstration ne transmet aucune donnée au site : le bouton ouvre votre logiciel de messagerie. Le formulaire définitif sera configuré avant la mise en ligne.</p>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="b138ebce-0fbc-4642-aa13-9b7b8f43bf1a">
+<input type="hidden" name="subject" value="Nouvelle demande depuis le site EMENDAR">
+<input type="hidden" name="from_name" value="Site EMENDAR">
+<input type="hidden" name="redirect" value="https://cneny-17025.github.io/emendar-site/merci.html">
+<input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+
+<div class="form-grid">
+  <div class="field"><label for="name">Nom / Prénom *</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+  <div class="field"><label for="company">Laboratoire / Société</label><input id="company" name="Laboratoire / Société" type="text" autocomplete="organization"></div>
+  <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+  <div class="field"><label for="phone">Téléphone</label><input id="phone" name="Téléphone" type="tel" autocomplete="tel"></div>
+  <div class="field full"><label for="need">Type de besoin</label>
+    <select id="need" name="Type de besoin">
+      <option value="">Sélectionner…</option>
+      <option>Responsable Qualité / Métrologie externalisée</option>
+      <option>Management de transition</option>
+      <option>Appui au Responsable Qualité</option>
+      <option>Autre besoin</option>
+    </select>
+  </div>
+  <div class="field full"><label for="message">Votre message *</label><textarea id="message" name="message" rows="7" required></textarea></div>
+</div>
+
+<button class="btn primary" type="submit" style="border:0;margin-top:16px">Envoyer ma demande →</button>
+<p class="form-note">Les informations saisies sont utilisées uniquement pour répondre à votre demande. Elles sont transmises via Web3Forms. Consultez les <a href="mentions-legales.html">informations relatives à la confidentialité</a>.</p>
 </form></div></div></section></main><footer class="footer"><div class="container footer-main">
 <div><div class="footer-brand"><img src="assets/logo-emendar.png" alt=""><div><b>EMENDAR</b><div>Responsable Qualité & Métrologie externalisée</div></div></div><p style="max-width:430px;color:#6b7785;font-size:13px">Accompagnement des laboratoires dans le pilotage de leur système de management selon la NF EN ISO/IEC 17025.</p></div>
 <div class="footer-col"><strong>Navigation</strong><a href="externalisation-transition.html">Externalisation & transition</a><a href="expertises.html">Expertises</a><a href="accompagnement.html">Accompagnement</a><a href="secteurs.html">Secteurs</a><a href="a-propos.html">À propos</a></div>
