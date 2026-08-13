@@ -35,3 +35,8 @@ Envoyer une demande test depuis la page Contact publique et vérifier :
 2. réception de l'email à l'adresse EMENDAR ;
 3. présence de la soumission dans le tableau de bord Web3Forms ;
 4. qualité de présentation du message reçu.
+
+
+## V7 — Mentions légales
+
+La page mentions-legales.html a été complétée avec les informations administratives d’EMENDAR et une information RGPD adaptée au formulaire de contact. L’adresse publique de contact affichée dans le pied de page a été harmonisée vers contact@emendar-iso17025.fr.
