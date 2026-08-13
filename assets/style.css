@@ -81,3 +81,35 @@
 .contact-form .form-note{max-width:680px;line-height:1.55}
 .contact-form .form-note a{text-decoration:underline}
 @media(max-width:680px){.contact-form .form-grid{grid-template-columns:1fr}.contact-form .field.full{grid-column:auto}}
+
+/* Correctif mobile accueil : bouton + carte ISO 17025 */
+@media (max-width: 620px) {
+  .hero-copy {
+    padding-bottom: 30px;
+  }
+
+  .hero-copy > .btn.primary {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero .art {
+    min-height: 430px;
+    margin-top: 18px;
+  }
+
+  .hero .arc {
+    inset: 12px 0 20px 0;
+  }
+
+  .hero .lab {
+    top: 28px;
+    right: 4%;
+    bottom: auto;
+    width: 92%;
+    padding: 24px;
+  }
+}
