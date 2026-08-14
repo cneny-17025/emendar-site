@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emendar-iso17025.fr/sitemap.xml
+Sitemap: https://www.emendar-iso17025.fr/sitemap.xml
